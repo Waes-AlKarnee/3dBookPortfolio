@@ -220,11 +220,15 @@
                     <h1 class="title">Contact Me</h1>
 
                     <div class="contact-box">
-                        <form action="#">
-                            <input type="text" class="field" placeholder="Full Name" required>
-                            <input type="email" class="field" placeholder="Email Address" required>
-                            <textarea name="" id="" class="field" placeholder="Your Message" required></textarea>
-                            <input type="submit" class="btn" value="Send Message">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+
+                            <input type="hidden" name="access_key" value="4724fab9-2edc-4970-9bed-f8c9510ef649">
+
+                            <input type="text" name="name" class="field" placeholder="Full Name" required>
+                            <input type="email" name="email" class="field" placeholder="Email Address" required>
+                            <textarea name="message" id="" class="field" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn">Send Message</button>
+                            <!-- <input type="submit" class="btn" value="Send Message"> -->
                         </form>
                     </div>
 
