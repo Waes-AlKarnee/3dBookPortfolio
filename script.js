@@ -101,3 +101,14 @@ pages.forEach((_, index) => {
         
     }, (index + 1) * 200 + 2100)
 })
+
+// Scroll to profile section when mov button is clicked
+document.querySelector('.mov').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default anchor click behavior
+    document.getElementById('Profile').scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to profile
+});
+// Scroll to contact section when Contact Me button is clicked
+document.querySelector('.btn.Contact-me').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default anchor click behavior
+    document.querySelector('.page-back .contact-box').scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to contact
+});
